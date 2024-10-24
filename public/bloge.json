@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "cover": "https://i.ibb.co.com/J7XZWzW/2.png",
+        "title": "Whispers of the Night",
+        "author": "Luna Hart",
+        "author_img": "https://i.ibb.co.com/GvKGZGB/boy1.png",
+        "post_date": "2024-10-01",
+        "reading_time": 5,
+        "hashtags": ["#fiction", "#mystery", "#nighttales"]
+    },
+    {
+        "id": 2,
+        "cover": "https://i.ibb.co.com/44W2cvd/3.png",
+        "title": "Journey Through Time",
+        "author": "Ethan Rivers",
+        "author_img": "https://i.ibb.co.com/wCPRP2h/boy2.jpg",
+        "post_date": "2024-10-05",
+        "reading_time": 7,
+        "hashtags": ["#adventure", "#timetravel", "#scifi"]
+    },
+    {
+        "id": 3,
+        "cover": "https://i.ibb.co.com/br4p5j3/4.jpg",
+        "title": "Beneath the Stars",
+        "author": "Maya Lin",
+        "author_img": "https://i.ibb.co.com/HhBrDHr/girl1.jpg",
+        "post_date": "2024-10-10",
+        "reading_time": 8,
+        "hashtags": ["#romance", "#stars", "#poetry"]
+    },
+    {
+        "id": 4,
+        "cover": "https://i.ibb.co.com/Tmw2rrk/1.jpg",
+        "title": "The Hidden Truth",
+        "author": "James Stone",
+        "author_img": "https://i.ibb.co.com/PYySsRq/girl2.jpg",
+        "post_date": "2024-10-15",
+        "reading_time": 6,
+        "hashtags": ["#thriller", "#suspense", "#truth"]
+    }
+]
