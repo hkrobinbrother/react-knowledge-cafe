@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import { FaBeer } from 'react-icons/fa';
+
 import {IoBookmark } from "react-icons/io5";
 
-const Blog = ({ blog ,handleAddToBookmark}) => {
-    const {title, cover,author,author_img,post_date,hashtags,reading_time,} = blog;
+const Blog = ({ blog ,handleAddToBookmark, handleMarksAsRead}) => {
+    const {id,title, cover,author,author_img,post_date,hashtags,reading_time,} = blog;
     return (
-        <div className='mb-20'>
+        <div className='mb-20  space-y-4'>
             <img className='w-full mb-8' src={cover} alt={`cover picture of the title ${title}`} />
             <div className='flex justify-between'>
                 <div className='flex mb-4'>
@@ -17,7 +17,7 @@ const Blog = ({ blog ,handleAddToBookmark}) => {
                 </div>
                 <div>
                         <span>{reading_time} min read</span>
-                        <button onClick={handleAddToBookmark} className='ml-2 text-2xl align-text-bottom text-red-600 '><IoBookmark></IoBookmark></button>
+                        <button onClick={() => handleAddToBookmark(blog)} className='ml-2 text-2xl align-text-bottom text-red-600 '><IoBookmark></IoBookmark></button>
                 </div>
                 
             </div>
@@ -27,12 +27,15 @@ const Blog = ({ blog ,handleAddToBookmark}) => {
                     hashtags.map((hash, idx)=> <span key={idx}><a href="">{hash}</a></span> )
                 }
             </p>
+            <button onClick={()=>handleMarksAsRead(id,reading_time)} className='text-purple-800 font-bold underline' >Mark As Read</button>
         </div>
     );
 };
 
 Blog.propTypes ={
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleAddToBookmark: PropTypes.func,
+    handleMarksAsRead:PropTypes.func
 }
 
 export default Blog;
